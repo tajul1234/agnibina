@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('ad.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+.container {
+    width: 96%; /* Increased width for better content accommodation */
+    max-width: 1600px; /* Increased max width for larger screens */
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Increased opacity for a solid background */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Slight border for separation */
+    height: auto; /* Allow height to adjust based on content */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333; /* Changed to dark color for better visibility */
+    margin-bottom: 20px; /* Space below headers */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Space above table */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Light border for table cells */
+    color: #333; /* Darker text color for better visibility */
+}
+
+th {
+    background-color: rgba(76, 175, 80, 0.9); /* Semi-transparent green */
+    color: white;
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column */
+    width: 100%; /* Full width to match the container */
+}
+
+/* General Button Styles */
+button {
+    width: 100%; /* Set buttons to be equal width */
+    padding: 10px 15px;
+    color: white; /* Text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    margin-top: 10px; /* Space above buttons */
+}
+
+/* Approve Button Styles */
+button.approve {
+    background-color: rgba(76, 175, 80, 0.8); /* Semi-transparent green for approve button */
+}
+
+button.approve:hover {
+    background-color: rgba(76, 175, 80, 1); /* Darker green on hover */
+}
+
+/* Reject Button Styles */
+button.reject {
+    background-color: rgba(255, 0, 0, 0.8); /* Semi-transparent red for reject button */
+}
+
+button.reject:hover {
+    background-color: rgba(255, 0, 0, 1); /* Darker red on hover */
+}
+
+a {
+    color: rgba(76, 175, 80, 0.8); /* Semi-transparent green for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Additional styles for improved text visibility */
+p, li {
+    color: #333; /* Ensure paragraphs and list items are dark for contrast */
+    line-height: 1.5; /* Better line spacing for readability */
+}

@@ -1,0 +1,52 @@
+/* Custom Styling for Cards */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+.table {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.table th, .table td {
+    text-align: left;
+    padding: 8px;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+/* Circle Image Styling */
+.rounded-circle {
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-right: 20px;
+}
+
+/* Background Styling */
+.container {
+    background-color: #f4f6f9;
+    padding-top: 30px;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,206 @@
+/* Body Styling */
+body {
+    background-color: #e8f0f9;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1e3d58;
+    padding-top: 30px;
+    color: white;
+}
+
+.sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.sidebar a:hover {
+    background-color: #1b74b8;
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+
+.sidebar a.active {
+    background-color: #1a5d8c;
+}
+
+.sidebar i {
+    margin-right: 10px;
+}
+
+/* Content */
+.content {
+    margin-left: 250px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    transition: margin-left 0.3s;
+}
+
+.content.collapsed {
+    margin-left: 0;
+}
+
+/* Main Title */
+.main-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 40px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Gradient Backgrounds for Cards */
+.card.bg-success {
+    background: linear-gradient(145deg, #28a745, #218838);
+}
+
+.card.bg-danger {
+    background: linear-gradient(145deg, #dc3545, #c82333);
+}
+
+.card.bg-warning {
+    background: linear-gradient(145deg, #ffc107, #e0a800);
+    color: #212529;
+}
+
+/* Button */
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: #1e3d58;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+/* Animated Header */
+.animated-header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #ff6f61, #f3a953, #3ac569, #1e88e5, #9b59b6, #ff4081, #ffd700, #00e676, #ff5722);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 4s linear infinite;
+}
+
+/* Compatibility Section */
+.card.compatibility {
+    background-color: #6c757d;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.card.compatibility button {
+    background-color: #495057;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.card.compatibility button:hover {
+    background-color: #343a40;
+    transform: scale(1.1);
+}
+
+/* Keyframe for Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    .content {
+        margin-left: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .content {
+        margin-left: 0;
+    }
+}

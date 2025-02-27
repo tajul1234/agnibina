@@ -1,0 +1,87 @@
+/* General Body Styling */
+body {
+    min-height: 100vh;
+    background-color: #f4f7fc;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Content Container */
+.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Top Bar */
+.top-bar {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center dashboard title */
+    align-items: center; /* Vertically center the items */
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.top-bar h1 {
+    color: #4e73df;
+    font-size: 2rem;
+    margin: 10px 0;
+    text-align: center; /* Center alignment of dashboard title */
+    flex: 1; /* Ensures the title takes the center space */
+}
+
+/* Username in Top Right */
+.top-bar .username {
+    position: absolute; /* Position it absolutely in the top-right */
+    right: 10px; /* 10px from the right */
+    top: 10px; /* 10px from the top */
+    font-weight: bold;
+    color: #495057;
+}
+
+/* Profile Image in the top-right corner */
+.profile-img {
+    width: 40px; /* Adjust size as necessary */
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+/* Responsive Cards Grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-md-4 {
+    flex: 1 1 100%;
+    max-width: 300px;
+    margin: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .top-bar h1 {
+        font-size: 1.5rem;
+    }
+}

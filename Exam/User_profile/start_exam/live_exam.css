@@ -1,0 +1,211 @@
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding-top: 50px;
+  padding: 20px;
+}
+
+.header {
+  background-color: #4e73df;
+  color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .school-info {
+  text-align: center;
+  width: 100%;
+}
+
+.header .school-info h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.header .school-info img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.timer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #ff5733;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.question-container .question {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.question-container .options {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.question-container .options .form-check {
+  flex: 1 1 48%;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.question-container .options label {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  margin-right: 15px;
+  border-radius: 10px;
+  background-color: #e9ecef;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.question-container .options input[type="radio"] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.question-container .options label:hover {
+  background-color: #dcdfe1;
+  transform: scale(1.05);
+}
+
+.question-container .options input[type="radio"]:checked + label {
+  background-color: #4e73df;
+  color: #fff;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn {
+  width: 48%;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.alert {
+  display: none;
+  padding: 15px;
+  background-color: #28a745;
+  color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.alert.show {
+  display: block;
+}
+
+.school-logo {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.question-card {
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.question-card .form-check {
+  margin-bottom: 15px;
+}
+
+video {
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  position: fixed;
+  right: 10px;
+  bottom: 470px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+@media (max-width: 767px) {
+  .form-check {
+    width: 100%;
+  }
+
+  .question-container .options .form-check {
+    flex: 1 1 100%;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  video {
+    max-width: 120px;
+    bottom: 400px;
+    right: 1px;
+  }
+}
